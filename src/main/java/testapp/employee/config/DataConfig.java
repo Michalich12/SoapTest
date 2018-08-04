@@ -1,4 +1,4 @@
-package com.springmvc.config;
+package testapp.employee.config;
 
 import org.hibernate.ejb.HibernatePersistence;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +18,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @PropertySource("classpath:database.properties")
-@EnableJpaRepositories("com.springmvc.repository")
+@EnableJpaRepositories("testapp.employee.repository")
 public class DataConfig {
 
     private static final String PROP_DATABASE_DRIVER = "db.driver";
